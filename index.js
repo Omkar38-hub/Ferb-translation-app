@@ -13,7 +13,7 @@ function errorHandling(error)
   alert("Something went wrong!.Please try again later.")
 }
 button.addEventListener("click",function(){
-   fetch(createApi(text.value))
+   fetch(createApi(text.value)) // fetch function to Api data
    .then(response=>response.json())
    .then(json=>{
      var translatedText=json.contents.translated;
