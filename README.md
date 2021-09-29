@@ -1,4 +1,4 @@
-# Funtalk
+# Feb Translation App
 * Convert Engish to Ferb Latin.
 
 * During their routine summer fun,
