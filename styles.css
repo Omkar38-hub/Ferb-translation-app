@@ -4,12 +4,28 @@ body{
   background-color: #FBBF24;
 }
 nav{
-  margin: 2rem auto 1rem;
-  padding: 2rem;
+  margin: 1rem auto 0;
   font-weight: bold;
   font-family: 'Creepster', cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #150050;
+}
+.dropdown{
+   font-family: 'Kalam', cursive;
+   font-weight: bold;
+   font-size: 1rem;
+   text-align:left;
+   padding-left:5rem;
+}
+.dropdown h2{
+  margin: 0;
+}
+select{
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 textarea{
   display: block;
@@ -22,6 +38,7 @@ textarea{
   font-weight: bold;
   font-size: 1rem;
 }
+
 footer{
   font-family: 'Akaya Kanadaka', cursive;
   text-align: center;
@@ -32,13 +49,13 @@ p{
 }
 .input{
   width: 40%;
-  height: 20vh;
+  height: 10vh;
 
 }
 .output{
   width: 40%;
-  min-height: 18vh;
-  max-height: 20vh;
+  min-height: 8vh;
+  max-height: 10vh;
   pointer-events: none;
 }
 .flip-container {
@@ -46,7 +63,18 @@ p{
   display: inline-block;
   margin-bottom: 1rem;
 }
+.flip-this {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
 
+.flip-container:hover .flip-this {
+  transition: 0.9s;
+  transform: rotateY(180deg);
+}
 .about{
   font-weight: bold;
   line-height: 2;
